@@ -6,20 +6,12 @@
   </div>
 </template>
 <script>
+import toggleMixins from "@/mixins/toggleMixin";
+
 export default {
   name: "my-dialog",
-  props: {
-    show: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  methods: {
-    hideDialog() {
-      this.$emit("update:show", false);
-    },
-  },
-};
+  mixins: [toggleMixins],
+};  
 </script>
 <style scoped>
 .dialog {
@@ -27,7 +19,7 @@ export default {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   position: fixed;
   display: flex;
 }

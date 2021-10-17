@@ -11,7 +11,7 @@ components.forEach(component => {
 })
 
 directives.forEach(directive => {
-  app.component(directive.name, directive)
+  app.directive(directive.name, directive)
 })
 
 app
