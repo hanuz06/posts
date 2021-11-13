@@ -11,11 +11,14 @@ import toggleMixins from "@/mixins/toggleMixin";
 export default {
   name: "my-dialog",
   mixins: [toggleMixins],
+  mounted(){
+    console.log('dialog mounted...')
+  }
 };  
 </script>
 <style scoped>
 .dialog {
-  top: 0;
+  top: 0; 
   bottom: 0;
   right: 0;
   left: 0;

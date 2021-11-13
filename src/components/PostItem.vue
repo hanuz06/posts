@@ -2,7 +2,7 @@
   <div class="post">
     <div style="display:flex; flex-direction:column">
       <div>
-        {{ post.id }}
+        {{ post.id }} likes = {{$store.state.likes}}
       </div>
       <div><strong>Name:</strong> {{post.title}}</div>
       <div><strong>Description:</strong> {{post.body}}</div>
